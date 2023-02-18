@@ -1,0 +1,19 @@
+.header {
+  display: grid;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  place-items: center;
+  background-color: var(--bg-backgroundcolor);
+  background-image: var(--bg-backgroundimage);
+
+}
+
+.input {
+  background-color: #cecece;
+  padding: 10px 10px;
+  border-radius: 50px;
+  margin: 10px 10px;
+  border: 2px solid black;
+  width: 60% ;
+}
