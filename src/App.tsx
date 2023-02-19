@@ -2,8 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {Items, Pokemons, Pokemon} from './pages/';
 import './App.css';
 
-
-// Routes es el antiguo Switch.
+// Routes is the old Switch.
 
 function App() {
   return (

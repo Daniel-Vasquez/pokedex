@@ -1,0 +1,15 @@
+.loading-screen {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-backgroundcolor);
+  background-image: var(--bg-backgroundimage);
+}
+
+.loading-screen__icon {
+  width: 30%;
+  height: 30%;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+}

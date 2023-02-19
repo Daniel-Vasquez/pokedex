@@ -1,28 +1,34 @@
 import { useEffect, useState } from "react";
+import { fetchPokemons } from "../api/fetchPokemons";
+import { Pokemon } from "../types/types.d";
+import { waitFor } from "../utils/utils";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-
+import LoadingScreen from '../components/LoadingScreen'
 import PokemonsStyles from "../components/styles/Pokemons.module.css";
-import { fetchPokemons } from "../api/fetchPokemons";
-import { Pokemon } from "../types/types.d";
 
 const Pokemons = () => {
   const [query, setQuery] = useState("");
-
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     const fetchAllPokemons = async () => {
+      setIsLoading(true)
+      await waitFor(1000) // To wait 'X' seconds.
       const allPokemons = await fetchPokemons();
 
       setPokemons(allPokemons);
+      setIsLoading(false)
     };
 
     fetchAllPokemons();
   }, []);
 
-  // console.log({ pokemons });
+  if (isLoading || !pokemons) {
+    return <LoadingScreen />
+  }
   
   return (
     <>
