@@ -57,6 +57,8 @@ const Pokemon = () => {
               className={PokemonStyles["pokemon-info__img"]}
               src={pokemon?.imgSrc}
               alt={pokemon?.name}
+              width="200"
+              height="200"
             />
           </div>
           <div className={PokemonStyles["info-text"]}>
