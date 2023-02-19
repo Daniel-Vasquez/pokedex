@@ -4,15 +4,23 @@
   font-weight: bold;
   padding: 10px;
   place-items: center;
-  background-color: var(--bg-backgroundcolor);
-  background-image: var(--bg-backgroundimage);
+  /* background-color: var(--bg-backgroundcolor);
+  background-image: var(--bg-backgroundimage); */
+  background-color: #ccc7;
+  border-bottom: 3px solid black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .input {
-  background-color: #cecece;
+  background-color: white;
   padding: 10px 10px;
-  border-radius: 50px;
+  /* border-radius: 50px; */
+  border: none;
   margin: 10px 10px;
   border: 2px solid black;
   width: 60% ;
+  outline: none;
 }

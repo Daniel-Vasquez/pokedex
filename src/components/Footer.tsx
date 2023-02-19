@@ -10,7 +10,7 @@ const Footer = () => {
       <Link
         className={FooterStyle["footer-link"]}
         to="/pokemons"
-        onClick={(e) => e.preventDefault()}
+        // onClick={(e) => e.preventDefault()}
       >
         <img
           className={FooterStyle["footer-icon"]}
@@ -23,7 +23,7 @@ const Footer = () => {
       <Link
         className={FooterStyle["footer-link"]}
         to="/items"
-        // onClick={(e) => e.preventDefault()}
+        onClick={(e) => e.preventDefault()}
       >
         <img
           className={FooterStyle["footer-icon"]}

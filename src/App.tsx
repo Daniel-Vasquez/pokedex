@@ -2,8 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {Items, Pokemons, Pokemon} from './pages/';
 import './App.css';
 
-// Routes is the old Switch.
-
 function App() {
   return (
     <Router>
